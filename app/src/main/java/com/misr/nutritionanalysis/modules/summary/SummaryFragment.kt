@@ -79,7 +79,7 @@ class SummaryFragment : DaggerFragment() {
             val totalCals = viewModel.countTotalCalories(ingredients)
             Toast.makeText(
                 requireContext(),
-                "total recipe calories is $totalCals",
+                "total recipe calories is $totalCals kcal",
                 Toast.LENGTH_LONG
             ).show()
         }
