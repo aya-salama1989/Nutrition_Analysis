@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Nutrition Analysis</string>
+    <string name="analyse_recipe">Analyse Recipe</string>
+    <string name="analyse">Analyse</string>
+    <string name="hint_enter_ingredients">1 cup rice,\n10 oz chickpeas</string>
+    <string name="add_ingredients">Please add your recipe\'s ingredients below</string>
+    <string name="add_ingr">Please add your ingredients</string>
+    <string name="summary">Summary</string>
+    <string name="count_total">Sum Total Calories</string>
+    <string name="undefined">You entered unidentifiable text for nutrition API</string>
+</resources>
