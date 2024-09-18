@@ -1,5 +1,4 @@
 # Nutrition_Analysis
-An Employement Task built with the following;
 
 1. Dagger 2 as Dependency Injection library
 2. Retrofit for Networking
