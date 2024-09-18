@@ -5,7 +5,6 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.misr.nutritionanalysis.modules.analyse.domain.AnalyseIngredientsUC
-import com.misr.nutritionanalysis.modules.analyse.domain.NutritionalFactEntity
 import com.misr.nutritionanalysis.modules.analyse.presentation.NutrientsList
 import com.misr.nutritionanalysis.modules.analyse.presentation.toViewObject
 import kotlinx.coroutines.launch

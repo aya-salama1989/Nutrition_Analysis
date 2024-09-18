@@ -47,6 +47,4 @@ class NutrientsAdapter :
             return oldItem == newItem
         }
     }
-
-
 }

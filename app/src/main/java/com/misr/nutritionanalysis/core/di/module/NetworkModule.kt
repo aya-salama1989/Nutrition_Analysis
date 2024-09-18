@@ -10,15 +10,8 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 private const val BASE_URL = "https://api.edamam.com"
 
-
 @Module
 class NetworkModule {
-
-//    @Provides
-//    fun provideBaseURL():String{
-//        return ""
-//    }
-
 
     @Provides
     fun provideRetrofit(): Retrofit {
@@ -27,7 +20,6 @@ class NetworkModule {
             .addConverterFactory(GsonConverterFactory.create())
             .client(provideOKHttp()).build()
     }
-
 
     @Provides
     fun provideOKHttp(): OkHttpClient {
@@ -39,6 +31,4 @@ class NetworkModule {
         }
         return httpClient.build()
     }
-
-
 }

@@ -45,7 +45,6 @@ class AnalyseAPIModule {
     fun provideAuthAPI(retrofit: Retrofit): AnalyseAPI {
         return retrofit.create(AnalyseAPI::class.java)
     }
-
 }
 
 @Module
@@ -53,5 +52,4 @@ class AnalyseRepoModule {
     @Provides
     fun provideAnalyseRepo(analysisDS: IngredientsAnalysisDS): AnalyseRepo =
         AnalyseRepoImpl(analysisDS)
-
 }

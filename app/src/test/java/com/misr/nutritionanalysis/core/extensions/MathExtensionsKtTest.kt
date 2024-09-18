@@ -1,6 +1,5 @@
 package com.misr.nutritionanalysis.core.extensions
 
-import org.junit.Assert.*
 import org.junit.Test
 
 class MathExtensionsKtTest{

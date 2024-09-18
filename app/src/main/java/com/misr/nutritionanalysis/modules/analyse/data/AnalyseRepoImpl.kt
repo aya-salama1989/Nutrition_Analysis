@@ -14,7 +14,5 @@ class AnalyseRepoImpl @Inject constructor(private val ingredientsAnalysisDS:
     }
 }
 
-
-
 fun AnalysePostResponse.toEntity()
 = NutritionalFactEntity(ingredient = ingredients)

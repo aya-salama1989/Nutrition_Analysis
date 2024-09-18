@@ -14,5 +14,4 @@ class SummaryViewModel @Inject constructor() : ViewModel() {
         }
         return total
     }
-
 }

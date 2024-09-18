@@ -1,9 +1,7 @@
-package com.misr.nutritionanalysis.modules.analyse
+package com.misr.nutritionanalysis.modules.summary
 
 import androidx.lifecycle.ViewModel
 import com.misr.nutritionanalysis.core.ViewModelKey
-import com.misr.nutritionanalysis.modules.summary.SummaryFragment
-import com.misr.nutritionanalysis.modules.summary.SummaryViewModel
 import dagger.Binds
 import dagger.Module
 import dagger.android.ContributesAndroidInjector

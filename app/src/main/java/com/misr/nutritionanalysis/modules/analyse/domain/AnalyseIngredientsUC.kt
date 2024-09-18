@@ -21,6 +21,4 @@ fun String.toIngredients(): Ingredients {
     } else {
         Ingredients(arrayOf(this))
     }
-
-
 }

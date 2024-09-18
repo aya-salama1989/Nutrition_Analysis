@@ -5,8 +5,6 @@ import androidx.lifecycle.ViewModel
 import javax.inject.Inject
 
 class MainViewModel @Inject constructor(): ViewModel() {
-
-
     fun rightinLogs(){
         Log.e("TAG", "Testing Injection")
     }

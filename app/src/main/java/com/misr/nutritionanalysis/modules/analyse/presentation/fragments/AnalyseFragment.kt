@@ -43,11 +43,11 @@ class AnalyseFragment : DaggerFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initViews()
-        viewModel.nutritionalLiveData.observe(viewLifecycleOwner, {
+        viewModel.nutritionalLiveData.observe(viewLifecycleOwner) {
             val data = Bundle()
             data.putParcelable(KEY_INGREDIENTS_LIST, it)
             findNavController().navigate(R.id.dest_summary_fragment, data)
-        })
+        }
     }
 
 
@@ -97,11 +97,8 @@ class AnalyseFragment : DaggerFragment() {
         })
     }
 
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
-
-
 }

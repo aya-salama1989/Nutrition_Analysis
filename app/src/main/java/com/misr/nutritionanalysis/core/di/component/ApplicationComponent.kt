@@ -17,8 +17,8 @@ import dagger.android.support.AndroidSupportInjectionModule
         ActivityBuilderModule::class,
         ViewModelFactoryModule::class]
 )
-interface ApplicationComponent : AndroidInjector<BaseApplication> {
 
+interface ApplicationComponent : AndroidInjector<BaseApplication> {
     @Component.Builder
     interface Builder {
 
@@ -27,6 +27,4 @@ interface ApplicationComponent : AndroidInjector<BaseApplication> {
 
         fun build(): ApplicationComponent
     }
-
-
 }

@@ -3,7 +3,6 @@ package com.misr.nutritionanalysis.modules.summary
 import com.misr.nutritionanalysis.modules.analyse.presentation.NutrientItem
 import com.misr.nutritionanalysis.modules.analyse.presentation.NutrientsList
 import org.junit.Test
-import java.lang.annotation.Inherited
 import javax.inject.Inject
 
 class SummaryViewModelTest {

@@ -9,5 +9,4 @@ class IngredientsAnalysisDS @Inject constructor(private val analyse: AnalyseAPI)
     suspend fun analyseIngredients(ingredients: Ingredients): AnalysePostResponse {
         return analyse.postIngredientAnalysis(ingredients = ingredients)
     }
-
 }

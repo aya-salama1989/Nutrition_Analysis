@@ -2,7 +2,7 @@ package com.misr.nutritionanalysis.core.di.module
 
 import com.misr.nutritionanalysis.modules.MainActivity
 import com.misr.nutritionanalysis.modules.analyse.AnalyseFragmentModule
-import com.misr.nutritionanalysis.modules.analyse.SummaryFragmentModule
+import com.misr.nutritionanalysis.modules.summary.SummaryFragmentModule
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
@@ -16,5 +16,4 @@ abstract class ActivityBuilderModule {
         ]
     )
     abstract fun injectMainActivity(): MainActivity
-
 }
