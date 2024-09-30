@@ -6,13 +6,13 @@
     android:id="@+id/main_navgraph">
 
     <fragment
-        android:name="com.misr.nutritionanalysis.modules.analyse.presentation.fragments.AnalyseFragment"
+        android:name="com.nutritionanalysis.modules.analyse.presentation.fragments.AnalyseFragment"
         android:id="@+id/dest_analyse_fragment"
         tools:layout="@layout/analyse_fragment"
         android:label="@string/analyse_recipe"/>
 
     <fragment
-        android:name="com.misr.nutritionanalysis.modules.summary.SummaryFragment"
+        android:name="com.nutritionanalysis.modules.summary.SummaryFragment"
         android:id="@+id/dest_summary_fragment"
         tools:layout="@layout/summary_fragment"
         android:label="@string/summary">
