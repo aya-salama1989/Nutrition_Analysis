@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "583326989122",
+    "project_id": "nutrition-analysis-1770e",
+    "storage_bucket": "nutrition-analysis-1770e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:583326989122:android:261f9229fa0389fe3566db",
+        "android_client_info": {
+          "package_name": "com.nutritionanalysis"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfg_D309khCfjpbyrHOzz18qeAXJV9iD4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
