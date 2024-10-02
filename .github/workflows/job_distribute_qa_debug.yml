@@ -9,6 +9,8 @@ on:
 jobs:
  increment_build_number:
   runs-on: ubuntu-latest
+  permissions:
+    contents: write
 
   steps:
     - uses: actions/checkout@v4
@@ -17,10 +19,10 @@ jobs:
       with:
         distribution: 'temurin'
         java-version: 17
-    - name: Bump version
+    - name: Bump version code
       uses: chkfung/android-version-actions@v1.2.2
       with:
-        gradlePath: app/build.gradle
+        gradlePath: ./app/build.gradle
         versionCode: ${{github.run_number}}
         versionName: 1.0.0
 
