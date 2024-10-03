@@ -25,6 +25,7 @@ jobs:
         gradlePath: ./app/build.gradle
         versionCode: ${{github.run_number}}
         versionName: 1.0.0
+
 #    - name: Commit version bump
 #      run: |
 #        git config --global user.name 'GitHub Actions'
