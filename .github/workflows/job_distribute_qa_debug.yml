@@ -7,24 +7,24 @@ on:
     branches: [ "QA" ]
 
 jobs:
-# increment_build_number:
-#  runs-on: ubuntu-latest
-#  permissions:
-#    contents: write
-#
-#  steps:
-#    - uses: actions/checkout@v4
-#    - name: set up JDK
-#      uses: actions/setup-java@v4
-#      with:
-#        distribution: 'temurin'
-#        java-version: 17
-#    - name: Bump version code
-#      uses: chkfung/android-version-actions@v1.2.2
-#      with:
-#        gradlePath: ./app/build.gradle
-#        versionCode: ${{github.run_number}}
-#        versionName: 1.0.0
+ increment_build_number:
+  runs-on: ubuntu-latest
+  permissions:
+    contents: write
+
+  steps:
+    - uses: actions/checkout@v4
+    - name: set up JDK
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: 17
+    - name: Bump version code
+      uses: chkfung/android-version-actions@v1.2.2
+      with:
+        gradlePath: ./app/build.gradle
+        versionCode: ${{github.run_number}}
+        versionName: 1.0.0
 #    - name: Commit version bump
 #      run: |
 #        git config --global user.name 'GitHub Actions'
@@ -34,6 +34,7 @@ jobs:
 #        git push
 
  build:
+    needs: increment_build_number
     runs-on: ubuntu-latest
 
     steps:
@@ -44,13 +45,6 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: gradle
-
-    - name: Increment version code
-      run: |
-        versionCode=$(grep -oP '(?<=versionCode )\d+' app/build.gradle)
-        newVersionCode=$((versionCode + 1))
-        sed -i "s/versionCode $versionCode/versionCode $newVersionCode/" app/build.gradle
-        echo "Updated versionCode to $newVersionCode"
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
