@@ -6,6 +6,7 @@ import org.junit.Test
 import org.mockito.Mockito
 
 class SummaryViewModelTest {
+
     private val testData = arrayOf(
         NutrientItem("name1", "3", "22", 120.123),
         NutrientItem("name2", "4", "22", 12.123),
